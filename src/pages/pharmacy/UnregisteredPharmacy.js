@@ -36,6 +36,7 @@ const UnregisteredPharmacy=()=>{
 				{PHARMACY_DATA.map((pharmacy) => {
 						if (pharmacy.status !== "completed")
 							return <PharmacyRow pharmacy={pharmacy} />;
+						else return null;
 							
 					})}
 				</tbody>

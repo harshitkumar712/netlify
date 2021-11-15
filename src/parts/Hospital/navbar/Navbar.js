@@ -7,7 +7,7 @@ import NavbarItem from './NavbarItem';
 import {SidebarContext} from '../../../helpers/SidebarContext';
 
 const Navbar = (props) => {
-	const { sidebarToggle, toggleSidebar } = useContext(SidebarContext);
+	const {  toggleSidebar } = useContext(SidebarContext);
 	return (
 		<Container>
 			<Wrapper>

@@ -12,7 +12,7 @@ import Popup from 'reactjs-popup';
 
 const Navbar = (props) => {
 	const [modal,setModal]= useState(false);
-	const { sidebarToggle, handleSidebarToggle } = useContext(SidebarContext);
+	const {  handleSidebarToggle } = useContext(SidebarContext);
 	return (
 		<Container>
 			<Wrapper>

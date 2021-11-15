@@ -32,6 +32,7 @@ const RegisteredHospital = () => {
 						{PHARMACY_DATA.map((hospital) => {
 							if (hospital.status === "completed")
 								return <HospitalRow hospital={hospital} />;
+							else return null;
 
 						})}
 					</tbody>

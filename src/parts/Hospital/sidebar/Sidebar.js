@@ -1,6 +1,6 @@
-import React,{useState,useContext} from "react";
+import React,{useContext} from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import SidebarItem from './SidebarItem';
 import { device } from "../../../constants/mediaQueries";
 import { SidebarContext } from "../../../helpers/SidebarContext";
@@ -56,7 +56,7 @@ const SidebarItems = [
 ];
 
 const Sidebar = () => {
-	const { sidebarToggle, toggleSidebar } = useContext(SidebarContext);
+	const { sidebarToggle } = useContext(SidebarContext);
 	return (
 		<Container open={sidebarToggle}>
 			<Header><span>dashboard</span></Header>
@@ -113,8 +113,8 @@ const Header=styled.div`
 	font-size:0.7rem;
 }
 `
-const SmallSidebarItem= styled(SidebarItem)`
-	width:50%;
-`
+// const SmallSidebarItem= styled(SidebarItem)`
+// 	width:50%;
+// `
 
 export default Sidebar;

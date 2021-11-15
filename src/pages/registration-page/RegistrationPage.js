@@ -103,7 +103,7 @@ const RegistrationPage = () => {
 
 		}
 
-	}, [state])
+	}, [state,districtData])
 	const handleChange = (e) => {
 		setError("");
 		const value = e.target.value;
@@ -599,17 +599,17 @@ const Header = styled.div`
 	align-items: center;
 	margin: 1rem;
 `;
-const Back = styled.button`
-	border: none;
-	background: #fff;
-
-	font-size: 1.2rem;
-
-	margin: 1rem;
-	float: left;
-	color: #1d1d1d;
-	cursor: pointer;
-`;
+// const Back = styled.button`
+// 	border: none;
+// 	background: #fff;
+// 
+// 	font-size: 1.2rem;
+// 
+// 	margin: 1rem;
+// 	float: left;
+// 	color: #1d1d1d;
+// 	cursor: pointer;
+// `;
 
 const accreditionItems = [
 	{ id: 1, value: "NABH" },

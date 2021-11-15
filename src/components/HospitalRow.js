@@ -19,14 +19,16 @@ const HospitalRow = ({ hospital }) => {
 		switch (status) {
 			case 'pending':
 				return (<Link to="/agent/registration"><Button>Request</Button></Link>);
-				break;
+				
 			case 'processing':
 
 				return (<Button disabled>Request Sent</Button>);
-				break;
+				
 			case 'completed':
 				return (<Button disabled>Registered</Button>);
-				break;
+				
+				default:
+				return (<p>error</p>);
 		}
 	}
 

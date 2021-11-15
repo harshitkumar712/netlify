@@ -7,14 +7,14 @@ import Popup from "reactjs-popup";
 
 const PharmacyRow = ({ pharmacy }) => {
 	const [modal, setModal] = useState(false);
-	const [modalAccess, setModalAccess] = useState(false);
+	//const [modalAccess, setModalAccess] = useState(false);
 	let newDate = new Date(Date.now());
 	const handleModal = () => {
 		setModal(!modal);
 	};
-	const handleModalAccess = () => {
-		setModalAccess(!modal);
-	};
+	// const handleModalAccess = () => {
+	// 	setModalAccess(!modal);
+	// };
 	const renderSwitch = (status) => {
 		switch (status) {
 			case "pending":
@@ -23,13 +23,15 @@ const PharmacyRow = ({ pharmacy }) => {
 						<Button>Request</Button>
 					</Link>
 				);
-				break;
+				
 			case "processing":
 				return <Button disabled>Request Sent</Button>;
-				break;
+				
 			case "completed":
 				return <Button disabled>Registered</Button>;
-				break;
+				
+				default:
+				return <p>error</p>;
 		}
 	};
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Sidebar from '../../parts/Sidebar';
+//import Sidebar from '../../parts/Sidebar';
 // import Navbar from '../../parts/Navbar';
 import SalesLayout from '../../parts/Sales/layout/SalesLayout';
 
@@ -39,6 +39,8 @@ const RegisteredPharmacy = () => {
 						{PHARMACY_DATA.map((pharmacy) => {
 							if (pharmacy.status === "completed")
 								return <PharmacyRow pharmacy={pharmacy} />;
+							else
+								return null;
 
 						})}
 					</tbody>
