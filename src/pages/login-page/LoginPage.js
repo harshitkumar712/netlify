@@ -44,6 +44,7 @@ const LoginPage = (props) => {
 			<Wrapper>
 				<Background></Background>
 				<LoginContainer>
+				<pre><h2>Username and Password: 123</h2></pre>
 					{/* <Back> */}
 					{/* 	<i className="fas fa-arrow-left"></i> */}
 					{/* </Back> */}
@@ -52,6 +53,7 @@ const LoginPage = (props) => {
 					{/* 	<h4>Enter your registered Mobile Number</h4> */}
 					{/* </Header> */}
 					<Form>
+
 						<Input
 							label="Enter Username"
 							type="text"
